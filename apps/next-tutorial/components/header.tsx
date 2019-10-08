@@ -11,7 +11,7 @@ export default () => (
     <div>Global Header</div>
     <ul>
       <li><Link href="/"><a>Home</a></Link></li>
-      <li><Link href="/about"><a>About</a></Link></li>
+      <li><Link href="/characters"><a>Characters</a></Link></li>
     </ul>
   </Header>
 );
