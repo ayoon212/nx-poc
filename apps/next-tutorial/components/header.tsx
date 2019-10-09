@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/Link';
 import styled from '@emotion/styled';
 
