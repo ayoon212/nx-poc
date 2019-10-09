@@ -1,3 +1,4 @@
+import React from 'react';
 import Layout from '../../components/layout';
 import fetch from 'isomorphic-unfetch';
 
@@ -19,9 +20,8 @@ const Character = ({ character }) => (
   </Layout>
 );
 
-Character.getInitialProps = async function(context) {
+Character.getInitialProps = async function(context: any) {
   const { slug } = context.query;
-  console.log(`https://www.anapioficeandfire.com/api/characters?name=${getCharacterName(slug)}`);
   const res = await fetch(`https://www.anapioficeandfire.com/api/characters?name=${getCharacterName(slug)}`)
   const data = await res.json();
 
